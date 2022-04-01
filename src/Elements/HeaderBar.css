@@ -1,0 +1,29 @@
+.header {
+    background-color: #0067C6;
+    color: white;
+    border-bottom: 4px solid #0067C6;
+    padding: 0px 70px;
+}
+
+.header-text {
+    font-size: 40pt;
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+.btn-outline-primary {
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0067C6;
+    border-color: white;
+    text-decoration: underline;
+}
+
+.btn-check:checked+.btn-outline-primary {
+    color: #0067C6;
+    background-color: white;
+    border: 1px solid white;
+
+}

@@ -1,0 +1,18 @@
+.nav-link {
+    color: #0067C6;
+    font-size: 40pt;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    opacity: 0.5;
+}
+
+.active {
+    opacity: 1;
+}
+
+hr {
+    color: #0067C6;
+    opacity: 1;
+    transform: rotate(90deg);
+    margin-top: -349px;
+    width: 100%;
+}

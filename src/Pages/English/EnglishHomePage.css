@@ -1,0 +1,13 @@
+body {
+    background-color: white;
+}
+
+.articles {
+    padding-top: 7px;
+    padding-right: 70px;
+    width: 70%;
+}
+
+.years {
+    padding-left: 50px;
+}

@@ -1,0 +1,13 @@
+.table {
+    /*border-color: #0067C6;*/
+}
+
+th {
+    text-decoration: underline;
+}
+
+.section-title {
+    color: #0067C6;
+    font-size: 40pt;
+    font-family: 'Carrois Gothic SC', sans-serif;
+}

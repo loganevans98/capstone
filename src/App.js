@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import './index.css';
+import IntroPage from "./Pages/IntroPage";
+import EnglishHomePage from "./Pages/English/EnglishHomePage";
+import HeaderBar from "./Elements/HeaderBar";
+import {useState} from "react";
+import SpanishHomePage from "./Pages/Spanish/SpanishHomePage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [language, setLanguage] = useState("english");
+
+    function chooseLanguage(target) {
+        if(target === '1') {
+            console.log(target);
+            setLanguage("english");
+        } else if (target === '2') {
+            setLanguage("spanish");
+        }
+    }
+
+    return (
+        <div>
+            <HeaderBar changeLanguage={chooseLanguage}/>
+            {language === "english" ?
+                <EnglishHomePage /> :
+                <SpanishHomePage /> }
+        </div>
+    );
 }
 
 export default App;

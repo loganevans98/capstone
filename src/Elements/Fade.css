@@ -1,0 +1,15 @@
+.fade-in {
+    transition: opacity 1s ease;
+    color: white;
+    font-size: 50pt;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+}
+.fade-out {
+    color: white;
+    font-size: 50pt;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
